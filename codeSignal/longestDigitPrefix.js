@@ -15,16 +15,16 @@ const testStr3 = 'aaaaaaa';
 // ""
 
 function longestDigitsPrefix(inputString) {
-	let digitPrefix = "";
+	let digitPrefix = '';
 	for (let i = 0; i < inputString.length; i++) {
 		if (inputString[i] >= 0 && inputString[i] <= 9 && inputString[i] !== ' ') {
 			digitPrefix += inputString[i];
 		} else {
 			break;
 		}
-    }
-    
-	if (digitPrefix === "") {
+	}
+
+	if (digitPrefix === '') {
 		return 'There are no digits as a prefix';
 	} else {
 		return digitPrefix;
