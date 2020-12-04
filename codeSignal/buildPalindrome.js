@@ -10,8 +10,8 @@ buildPalindrome(st) = "abcdcba".
 */
 
 /* 
-have a copy of the string.
-keep adding the beginning of the string reversed to the end of the original string until it becomes a palindrome
+loop through the string and create a reversed chunk after each index
+if the original string + the chunk forms a palindrome, return the combination
 
 abcdc
 1. abcdc + a = abcdca palindrome? no
