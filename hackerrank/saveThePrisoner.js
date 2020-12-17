@@ -17,10 +17,10 @@ const s = 3;
 // 3
 
 /* 
-Explanation:
+1 2 3 4 5 6 7 8 9
 
-four prisoners: [1, 2, 3, 4]
-6 pieces of candy. start distributing at chair 2.
+7 - 1 + 3
+
 
 */
 
