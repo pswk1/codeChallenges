@@ -17,6 +17,10 @@ const str2 = 'aaabbbbcccddd';
 const queries2 = [9, 7, 8, 12, 5];
 // [Yes, No, Yes, Yes, No]
 
+const str3 = 'l';
+const queries3 = [1, 12];
+// [No, Yes]
+
 function weightedUniformStrings(str, queries) {
 	let letterWeights = new Map();
 
@@ -67,3 +71,4 @@ function weightedUniformStrings(str, queries) {
 
 console.log(weightedUniformStrings(str, queries));
 console.log(weightedUniformStrings(str2, queries2));
+console.log(weightedUniformStrings(str3, queries3));
