@@ -14,12 +14,6 @@ Pseudocode:
     - Math.max(nums[i], nums[i] + subArrSum)
 - Assign the maxSum to Math.max(maxSum, subArrSum)
 - return maxSum
-
-Initialize ans and subarr_sum to the first element of the array
-Iterate from index 1 to last index of the array
-Assign subarr_sum = max(nums[i], nums[i] + subarr_sum)
-Assign ans = max(ans, subarr_sum)
-return ans
 */
 
 function maxSubArray(nums) {
