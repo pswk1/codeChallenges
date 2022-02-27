@@ -4,7 +4,7 @@ const test2 = ['poke', 'pkoe', 'okpe', 'ekop'];
 
 function funWithAnagrams(text) {
 	for (let i = 0; i < text.length; i++) {
-		for (let j = i + 1; j < text.length; j++) {
+		for (let j = text.length; j >= i; j++) {
 			let str1 = text[i].split('').sort().join('');
 			let str2 = text[j].split('').sort().join('');
 
