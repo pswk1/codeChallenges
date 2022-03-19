@@ -11,7 +11,21 @@ const test2 = [1, 2, 3, 4];
 const test3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
 // true
 
-const containsDuplicate = (nums) => nums.length !== new Set(nums).size;
+// solve using a Set
+// const containsDuplicate = (nums) => nums.length !== new Set(nums).size;
+
+function containsDuplicate(nums) {
+	let hash = new Map();
+    
+    for (const num of nums) {
+        if (hash.has(num)) {
+            return true;
+        } else {
+            hash.set(num, 1);
+        }
+    }
+    return false;
+}
 
 const tests = {
 	'[1, 2, 3, 1]': { expected: true, received: containsDuplicate(test1) },
